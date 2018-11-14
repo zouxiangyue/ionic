@@ -1,0 +1,31 @@
+page-set {
+    ion-title{
+        width:250px
+    }
+    ion-content{
+        .box{
+            background-color: #eee;
+        }
+        ion-item{
+            height:80px;
+            img{
+                float:left;
+                height:18px;
+                display:block;
+                margin:4px 8px 0px 0px;
+            }
+            a{
+                text-decoration: none;
+                color:black;
+                font-size: 18px;
+                display:block;
+                float:left;
+               
+            }
+            span{
+                color:#888;
+                font-size: 18px;
+            }
+        }
+    }
+}

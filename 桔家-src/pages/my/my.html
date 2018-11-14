@@ -1,0 +1,55 @@
+<ion-content>
+    <img src='assets/images/my1.png'>
+    <ion-item detail-push no-lines>
+        <a href='#' style="color:black">我的订单</a>
+        <a item-end>查看全部订单</a>
+    </ion-item>
+    <ion-grid style="padding:0px;">
+        <ion-row class="row1">
+            <ion-col  (mouseover)="changeBgColor(0)" [class.bgColor]="b==0">
+                <img src="assets/images/m2.png">
+                <h6>我的发布</h6>
+            </ion-col>
+            <ion-col (mouseover)="changeBgColor(1)" [class.bgColor]="b==1">
+                <img src="assets/images/m1.png">
+                <h6>我的收藏</h6>
+            </ion-col>
+            <ion-col (mouseover)="changeBgColor(2)" [class.bgColor]="b==2">
+                <img src="assets/images/m3.png">
+                <h6>我的关注</h6>
+            </ion-col>
+        </ion-row>
+        <ion-row class="row2">
+            <ion-col (mouseover)="changeBgColor(3)" [class.bgColor]="b==3">
+                <img src="assets/images/m4.png">
+                <h6>购物车</h6>
+            </ion-col>
+            <ion-col (mouseover)="changeBgColor(4)" [class.bgColor]="b==4">
+                <img src="assets/images/m5.png">
+                <h6>收货地址</h6>
+            </ion-col>
+        </ion-row>
+        <ion-row  class="row2">
+            <ion-col (mouseover)="changeBgColor(5)" [class.bgColor]="b==5">
+                <img src="assets/images/m6.png">
+                <h6>优惠卷</h6>
+            </ion-col>
+            <ion-col (mouseover)="changeBgColor(6)" [class.bgColor]="b==6">
+                <img src="assets/images/m7.png">
+                <h6>在线客服</h6>
+            </ion-col>
+        </ion-row>
+        <ion-row  class="row2">
+            <ion-col (mouseover)="changeBgColor(7)" [class.bgColor]="b==7">
+                <!-- <ion-icon name='open'></ion-icon> -->
+                <img src="assets/images/m8.png">
+                <h6>我的消息</h6>
+            </ion-col>
+            <ion-col (click)="set()" (mouseover)="changeBgColor(8)" [class.bgColor]="b==8">
+                <img src="assets/images/m9.png">
+                <h6>设置</h6>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>
+
